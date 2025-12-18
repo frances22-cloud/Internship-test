@@ -14,7 +14,6 @@ def divide(num1, num2):
     else:
         return num1 / num2
 
-print("Simple Calculator")
 print("Operations: + (add), - (subtract), * (multiply), / (divide)\n")
 
 choice = input("Enter operation (+, -, *, /): ")

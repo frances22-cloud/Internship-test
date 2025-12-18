@@ -18,7 +18,8 @@ SELECT city, COUNT(*) AS student_count
 FROM students
 GROUP BY city
 """)
-print("Number of students per city:")
+
+print("Number of students per city: ")
 for city, count in cursor.fetchall():
     print(f"{city}: {count}")
 
@@ -28,7 +29,7 @@ SELECT name
 FROM students
 ORDER BY name ASC
 """)
-print(" Students names in alphabetical order:")
+print(" Students names in alphabetical order: ")
 for (name,) in cursor.fetchall():
     print(name)
 
